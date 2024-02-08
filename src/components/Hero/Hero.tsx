@@ -2,6 +2,7 @@ import { Youtube } from "lucide-react";
 import profile from "../../assets/profile.png";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const Hero: React.FC = () => {
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
+      id="home"
     >
       <div className="flex-col items-center flex md:w-1/2 w-full p-3">
         <motion.h1
@@ -36,9 +38,11 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <Button>Hire Me</Button>
-          <Button variant="secondary" className="flex items-center gap-2">
-            Youtube <Youtube />
-          </Button>
+          <Link to="https://youtube.com/@s-biwas" target="_blank">
+            <Button variant="secondary" className="flex items-center gap-2">
+              Youtube <Youtube />
+            </Button>
+          </Link>
         </motion.div>
       </div>
       <motion.div

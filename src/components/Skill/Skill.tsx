@@ -72,14 +72,14 @@ const Skill = () => {
     ? "opacity-100 translate-y-0 transition-opacity duration-900"
     : "opacity-0 translate-y-10";
   return (
-    <div className={`p-8 rounded-lg shadow-md ${revealClass}`} id="skill">
+    <div className={`p-8 rounded-lg  ${revealClass}`} id="skill">
       <h2 className="text-2xl font-bold mb-4">Skills</h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6  ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6   ">
         {skillCategories.map(({ category, icons }, index) => (
           <div
             key={index}
-            className={`mb-4 flex items-start flex-col border-r border-b shadow-md `}
+            className={`mb-4 flex items-start flex-col border-r border-b shadow-sm p-3 hover:bg-primary-foreground `}
           >
             <h3 className="text-lg font-semibold mb-2">{category}</h3>
             {icons.map(({ Icon, name }, iconIndex) => (

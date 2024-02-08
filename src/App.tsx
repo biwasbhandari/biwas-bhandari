@@ -8,6 +8,8 @@ import Project from "./components/Project/Project";
 import Skill from "./components/Skill/Skill";
 import { BrowserRouter as Router } from "react-router-dom";
 
+import ReviewCard from "./components/review/ReviewCard";
+
 function App() {
   return (
     <>
@@ -19,6 +21,7 @@ function App() {
           <Skill />
           <Project />
           <Contact />
+          <ReviewCard />
           <Footer />
         </Router>
       </ThemeProvider>

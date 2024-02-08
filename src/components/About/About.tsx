@@ -14,7 +14,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import Animation from "../animation";
 
 const links = [
   {
@@ -25,17 +25,17 @@ const links = [
   {
     name: <BsLinkedin />,
     title: "Biwas Bhandari",
-    link: "https://github.com/xbiwas",
+    link: "https://www.linkedin.com/in/biwas-bhandari/",
   },
   {
     name: <BsTwitterX />,
     title: "x_biwas",
-    link: "https://github.com/xbiwas",
+    link: "https://twitter.com/x_biwas",
   },
   {
     name: <BsInstagram />,
     title: "_acesh__",
-    link: "https://github.com/xbiwas",
+    link: "https://www.instagram.com/_acesh__",
   },
 ];
 const stats = [
@@ -46,34 +46,12 @@ const stats = [
 ];
 
 export default function About() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = document.getElementById("about");
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight - 100;
-        setIsVisible(isVisible);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check on mount
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const revealClass = isVisible
-    ? "opacity-100 translate-y-0 transition-opacity duration-700"
-    : "opacity-0 translate-y-10";
+  const revealClass = Animation("about");
 
   return (
     <div
       id="about"
-      className={`relative isolate overflow-hidden py-24 sm:py-32 ${revealClass}`}
+      className={`relative isolate overflow-hidden py-24 sm:py-32 border-b border-r ${revealClass}`}
     >
       <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"

@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-
+import { animateScroll as scroll } from "react-scroll";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -7,34 +6,49 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "../ui/button";
 
-const lists = [
+interface NavItem {
+  title: string;
+  to: string;
+}
+
+const lists: NavItem[] = [
   {
     title: "Home",
-    to: "/",
+    to: "home",
   },
   {
     title: "About",
-    to: "#about",
+    to: "about",
   },
   {
     title: "Skill",
-    to: "/",
+    to: "skill",
   },
   {
     title: "Project",
-    to: "/",
+    to: "project",
   },
 ];
 
 export function Navlist() {
+  const scrollToElement = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      scroll.scrollTo(element.offsetTop, {
+        duration: 800,
+        smooth: "easeInOutQuart",
+      });
+    }
+  };
+
   return (
-    <NavigationMenu className="md:flex hidden ">
+    <NavigationMenu className="md:flex hidden">
       <NavigationMenuList>
         {lists.map((list) => (
           <NavigationMenuItem key={list.title}>
-            <Link to={list.to}>
-              <Button variant="link">{list.title}</Button>
-            </Link>
+            <Button variant="link" onClick={() => scrollToElement(list.to)}>
+              {list.title}
+            </Button>
           </NavigationMenuItem>
         ))}
       </NavigationMenuList>
