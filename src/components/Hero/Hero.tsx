@@ -3,8 +3,18 @@ import profile from "../../assets/profile.png";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
 const Hero: React.FC = () => {
+  const scrollToContact = () => {
+    const contactElement = document.getElementById("contact");
+    if (contactElement) {
+      scroll.scrollTo(contactElement.offsetTop, {
+        duration: 800,
+        smooth: "easeInOutQuart",
+      });
+    }
+  };
   return (
     <motion.section
       className="flex flex-col-reverse items-center md:justify-around justify-center md:flex-row p-3 min-h-[95vh]"
@@ -37,7 +47,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <Button>Hire Me</Button>
+          <Button onClick={scrollToContact}>Hire Me</Button>
           <Link to="https://youtube.com/@s-biwas" target="_blank">
             <Button variant="secondary" className="flex items-center gap-2">
               Youtube <Youtube />
