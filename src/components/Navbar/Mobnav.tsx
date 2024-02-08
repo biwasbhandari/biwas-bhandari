@@ -47,7 +47,7 @@ export function Mobnav() {
         <SheetTrigger asChild>
           <Menu className="cursor-pointer" />
         </SheetTrigger>
-        <SheetContent side="left" className="h-screen flex justify-center">
+        <SheetContent side="bottom" className="h-screen flex justify-center">
           <SheetHeader>
             {lists.map((list) => (
               <SheetTitle key={list.title}>
