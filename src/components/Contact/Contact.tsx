@@ -4,9 +4,6 @@ import { Button } from "../ui/button";
 
 import { useToast } from "../ui/use-toast";
 
-import { BsFacebook, BsGithub, BsTwitterX } from "react-icons/bs";
-import { Linkedin } from "lucide-react";
-import { Link } from "react-router-dom";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Label } from "../ui/label";
