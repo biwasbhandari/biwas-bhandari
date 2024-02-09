@@ -25,6 +25,7 @@ import project5 from "../../assets/projects/p5.png";
 import project6 from "../../assets/projects/p6.png";
 import project7 from "../../assets/projects/p7.png";
 import project8 from "../../assets/projects/p8.png";
+import project9 from "../../assets/projects/p9.png";
 import { Link } from "react-router-dom";
 import Animation from "../animation";
 import { ArrowRight } from "lucide-react";
@@ -47,6 +48,23 @@ const projects = [
       "Framer Motion",
     ],
     src: project1,
+  },
+  {
+    title: "Eventhubnp",
+
+    demoLink: "https://eventhubnp.vercel.app/",
+    alertDescription:
+      "A place where users can organize or participate in a event",
+
+    techstack: [
+      "React",
+      "Next14",
+      "Tailwind CSS",
+      "Clerk Auth",
+      "Typescript",
+      "Framer Motion",
+    ],
+    src: project9,
   },
   {
     title: "Nike landing page",
