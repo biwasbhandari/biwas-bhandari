@@ -1,6 +1,11 @@
-import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
+import {
+  IoLogoHtml5,
+  IoLogoCss3,
+  IoLogoJavascript,
+  IoPeopleCircle,
+} from "react-icons/io5";
 
-import { RiReactjsLine } from "react-icons/ri";
+import { RiCommunityLine, RiReactjsLine } from "react-icons/ri";
 import {
   SiTailwindcss,
   SiTypescript,
@@ -9,10 +14,13 @@ import {
   SiMysql,
   SiPrisma,
   SiMongoose,
+  SiAdobephotoshop,
+  SiMicrosoftexcel,
 } from "react-icons/si";
 import { Button } from "../ui/button";
 import { BsBootstrap } from "react-icons/bs";
 import { useEffect, useState } from "react";
+import { FaDraft2Digital, FaFilePowerpoint } from "react-icons/fa";
 
 const skillCategories = [
   {
@@ -43,6 +51,15 @@ const skillCategories = [
       { Icon: SiMysql, name: "MySql" },
       { Icon: SiPrisma, name: "Prisma" },
       { Icon: SiMongoose, name: "Mongoose" },
+    ],
+  },
+  {
+    category: "Other",
+    icons: [
+      { Icon: SiAdobephotoshop, name: "Photoshop" },
+      { Icon: SiMicrosoftexcel, name: "Microsoft Excel" },
+      { Icon: IoPeopleCircle, name: "Marketing" },
+      { Icon: FaFilePowerpoint, name: "Powerpoint" },
     ],
   },
 ];
