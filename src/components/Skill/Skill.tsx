@@ -5,7 +5,7 @@ import {
   IoPeopleCircle,
 } from "react-icons/io5";
 
-import { RiCommunityLine, RiReactjsLine } from "react-icons/ri";
+import { RiReactjsLine } from "react-icons/ri";
 import {
   SiTailwindcss,
   SiTypescript,
@@ -20,7 +20,7 @@ import {
 import { Button } from "../ui/button";
 import { BsBootstrap } from "react-icons/bs";
 import { useEffect, useState } from "react";
-import { FaDraft2Digital, FaFilePowerpoint } from "react-icons/fa";
+import { FaFilePowerpoint } from "react-icons/fa";
 
 const skillCategories = [
   {
