@@ -151,6 +151,7 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
               src={src}
               alt={`Card Image for ${title}`}
               className="w-full rounded-lg border-r border-b"
+              loading="lazy"
             />
           </Link>
         </CardTitle>

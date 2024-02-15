@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
 
   return (
     <div className={`h-screen`} id="contact">
-      <h1 className="font-bold text-center mt-20 mb-10 text-2xl">Contact me</h1>
+      <h2 className="font-bold text-center mt-20 mb-10 text-2xl">Contact me</h2>
 
       <form
         ref={form}

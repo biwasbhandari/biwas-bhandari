@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}
       >
-        <img src={profile} alt="biwas" className="h-full" />
+        <img src={profile} alt="biwas" className="h-full" loading="lazy" />
       </motion.div>
     </motion.section>
   );
