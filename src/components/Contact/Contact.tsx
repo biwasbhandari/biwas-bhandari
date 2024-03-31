@@ -8,6 +8,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Label } from "../ui/label";
 import { ToastAction } from "../ui/toast";
+import { BsWhatsapp } from "react-icons/bs";
 
 const Contact: React.FC = () => {
   const { toast } = useToast();
@@ -90,7 +91,7 @@ const Contact: React.FC = () => {
 
   return (
     <div className={`h-screen`} id="contact">
-      <h2 className="font-bold text-center mt-20 mb-10 text-2xl">Contact me</h2>
+      <h2 className="font-bold text-center mt-20 mb-10 text-2xl">Contact Us</h2>
 
       <form
         ref={form}
@@ -154,8 +155,12 @@ const Contact: React.FC = () => {
             {isSubmitting ? "Submitting.." : "Submit"}
           </Button>
         </div>
+        <span className="">Or</span>
+        
+        <Button className="flex justify-center items-center"><span >Whatsapp</span><BsWhatsapp className="ml-3 mr-3"/>9861237042 / 9862904140</Button>
+   
       </form>
-      <div></div>
+      
     </div>
   );
 };

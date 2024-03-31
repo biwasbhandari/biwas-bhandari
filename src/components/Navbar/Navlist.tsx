@@ -17,15 +17,15 @@ const lists: NavItem[] = [
     to: "home",
   },
   {
-    title: "About",
+    title: "About us",
     to: "about",
   },
   {
-    title: "Skill",
+    title: "Our Services",
     to: "skill",
   },
   {
-    title: "Project",
+    title: "Our Projects",
     to: "project",
   },
 ];
@@ -46,7 +46,7 @@ export function Navlist() {
       <NavigationMenuList>
         {lists.map((list) => (
           <NavigationMenuItem key={list.title}>
-            <Button variant="link" onClick={() => scrollToElement(list.to)}>
+            <Button variant="link" className="text-xl" onClick={() => scrollToElement(list.to)}>
               {list.title}
             </Button>
           </NavigationMenuItem>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
-import { ModeToggle } from "../mode-toggle";
+// import { ModeToggle } from "../mode-toggle";
 
 import { animateScroll as scroll } from "react-scroll";
 import { Mobnav } from "./Mobnav";
@@ -18,8 +18,8 @@ const MenuToggle: React.FC = () => {
 
   return (
     <div className="flex items-center gap-2">
-      <ModeToggle />
-      <Button onClick={scrollToContact}>Contact</Button>
+   
+      <Button onClick={scrollToContact}>Contact Us</Button>
       <Mobnav />
     </div>
   );

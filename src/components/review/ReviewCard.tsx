@@ -6,20 +6,20 @@ const ReviewCard = () => {
       name: "Sajina Shrestha",
       designation: "Digital Marketing",
       comment:
-        "Very kind and colaborative person with good knowledge of SEO too.",
+        "Very kind and colaborative people with good knowledge of SEO too.",
       twitter: "https://twitter.com/Anijas22",
     },
     {
       name: "Nirajan Malla",
       designation: "Fullstack Developer",
-      comment: "Very flexible to work with him and solves the problem fast",
+      comment: "Very flexible to work with them and solves the problem fast",
       twitter: "https://twitter.com/coderNirajan",
     },
     {
       name: "Pratik Thapa",
       designation: "Frontend Developer",
       comment:
-        "Collaborative and helpful behaviour. It was good to work with him",
+        "Collaborative and helpful behaviour. It was good to work with them",
       twitter: "https://twitter.com/pratikthapw",
     },
     {
@@ -51,7 +51,7 @@ const ReviewCard = () => {
       id="review"
     >
       <h2 className="text-3xl font-bold text-center mb-6">
-        What People Say about me
+        What People Say about Us
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {reviews.map((review, index) => (

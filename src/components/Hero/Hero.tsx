@@ -1,5 +1,5 @@
-import { Youtube } from "lucide-react";
-import profile from "../../assets/profile.png";
+import { ArrowDown, Youtube } from "lucide-react";
+import profile from "../../assets/profile.jpg";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -15,6 +15,7 @@ const Hero: React.FC = () => {
       });
     }
   };
+  
   return (
     <motion.section
       className="flex flex-col-reverse items-center md:justify-around justify-center md:flex-row p-3 min-h-[95vh]"
@@ -23,31 +24,30 @@ const Hero: React.FC = () => {
       transition={{ duration: 0.6 }}
       id="home"
     >
-      <div className="flex-col items-center flex md:w-1/2 w-full p-3">
+      <div className="flex-col  flex md:w-1/2 w-full p-3">
         <motion.h1
-          className="font-bold md:text-6xl text-3xl"
+          className="font-bold md:text-6xl text-3xl text-center "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Biwas Bhandari
+          SPARK NEPAL
         </motion.h1>
-        <motion.p
+           <motion.p
           className="my-4 text-secondary-foreground md:text-3xl text-xl text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Frontend developer passionate about creating elegant and user-friendly
-          interfaces.
+          We help local businesses by providing them tailored support and micro services.
         </motion.p>
         <motion.div
-          className="flex flex-wrap gap-2"
+          className="flex flex-wrap gap-2 mt-5 justify-center "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <Button onClick={scrollToContact}>Hire Me</Button>
+          <Button onClick={scrollToContact} className="flex items-center">Our Services <ArrowDown height={15}/> </Button>
           <Link to="https://youtube.com/@s-biwas" target="_blank">
             <Button variant="secondary" className="flex items-center gap-2">
               Youtube <Youtube />
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}
       >
-        <img src={profile} alt="biwas" className="h-full" loading="lazy" />
+        <img src={profile} alt="biwas" className="h-[80vh] md:h-auto md:max-h-[60vh] lg:max-h-[70vh] border-l xl:max-h-[80vh]" loading="lazy" />
       </motion.div>
     </motion.section>
   );

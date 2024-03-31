@@ -40,9 +40,9 @@ const links = [
 ];
 const stats = [
   { name: "Experience", value: "2 years+" },
-  { name: "projects", value: "20+" },
-  { name: "Design and code", value: "Best" },
-  { name: "MERN", value: "Techstack" },
+  { name: "Clients", value: "10+" },
+  { name: "Design", value: "Best" },
+  { name: "For money", value: "Value" },
 ];
 
 export default function About() {
@@ -80,14 +80,11 @@ export default function About() {
       <div className={`mx-auto max-w-7xl px-6 lg:px-8   ${revealClass}`}>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight  sm:text-6xl">
-            About Me
+            About Us
           </h2>
           <p className="mt-6 text-lg leading-8 ">
-            As a frontend web developer, I specialize in leveraging React and
-            TypeScript to build dynamic and scalable user interfaces. My
-            expertise extends to integrating MongoDB for efficient data
-            management. Additionally, I have a keen interest in UI/UX design,
-            ensuring seamless and visually appealing user experiences.
+            
+We provide a range of services including website and landing page development, logo design, banner creation, and more. Our goal is to deliver tailored solutions that meet the specific needs of each client and help them succeed in their online presence.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

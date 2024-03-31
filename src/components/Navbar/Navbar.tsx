@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
       animate={{ y: scrollingDown ? -50 : 0 }}
       transition={{ duration: scrollingDown ? 0.6 : 0.5 }}
       className={clsx(
-        "flex justify-between  items-center bg-background animate-fade-in font-normal p-2 border-b  relative z-50",
+        "flex justify-between  items-center bg-background animate-fade-in font-normal p-6  relative z-50",
         !scrollingDown && "sticky top-0"
       )}
     >

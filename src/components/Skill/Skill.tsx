@@ -1,65 +1,35 @@
-import {
-  IoLogoHtml5,
-  IoLogoCss3,
-  IoLogoJavascript,
-  IoPeopleCircle,
-} from "react-icons/io5";
 
-import { RiReactjsLine } from "react-icons/ri";
-import {
-  SiTailwindcss,
-  SiTypescript,
-  SiNextdotjs,
-  SiMongodb,
-  SiMysql,
-  SiPrisma,
-  SiMongoose,
-  SiAdobephotoshop,
-  SiMicrosoftexcel,
-} from "react-icons/si";
 import { Button } from "../ui/button";
-import { BsBootstrap } from "react-icons/bs";
+
 import { useEffect, useState } from "react";
-import { FaFilePowerpoint } from "react-icons/fa";
+
+import {  ArrowRightFromLine,  } from "lucide-react";
 
 const skillCategories = [
   {
-    category: "Frontend",
+    category: "Web design",
     icons: [
-      { Icon: IoLogoHtml5, name: "HTML" },
-      { Icon: IoLogoCss3, name: "CSS3" },
-      { Icon: IoLogoJavascript, name: "Javascript" },
-      { Icon: SiTypescript, name: "Typescript" },
+      { Icon: ArrowRightFromLine, name: "Landing Page" },
+      { Icon: ArrowRightFromLine, name: "Ecommerce Website" },
+      { Icon: ArrowRightFromLine, name: "Portfolio Website" },
+  
     ],
   },
   {
-    category: "Frameworks",
-    icons: [{ Icon: SiNextdotjs, name: "Nextjs" }],
-  },
-  {
-    category: "Library",
+    category: "Graphics Design",
     icons: [
-      { Icon: RiReactjsLine, name: "React" },
-      { Icon: SiTailwindcss, name: "Tailwind CSS" },
-      { Icon: BsBootstrap, name: "Bootstrap" },
-    ],
-  },
-  {
-    category: "Database",
-    icons: [
-      { Icon: SiMongodb, name: "MongoDb" },
-      { Icon: SiMysql, name: "MySql" },
-      { Icon: SiPrisma, name: "Prisma" },
-      { Icon: SiMongoose, name: "Mongoose" },
+      { Icon: ArrowRightFromLine, name: "Banner Design" },
+      { Icon: ArrowRightFromLine, name: "Logo Design" },
+      { Icon: ArrowRightFromLine, name: "Menu Design" },
     ],
   },
   {
     category: "Other",
     icons: [
-      { Icon: SiAdobephotoshop, name: "Photoshop" },
-      { Icon: SiMicrosoftexcel, name: "Microsoft Excel" },
-      { Icon: IoPeopleCircle, name: "Marketing" },
-      { Icon: FaFilePowerpoint, name: "Powerpoint" },
+      { Icon: ArrowRightFromLine, name: "Flex Print" },
+      { Icon: ArrowRightFromLine, name: "Color Print" },
+      { Icon: ArrowRightFromLine, name: "Social Media Handling" },
+      { Icon: ArrowRightFromLine, name: "Video editing" },
     ],
   },
 ];
@@ -90,7 +60,7 @@ const Skill = () => {
     : "opacity-0 translate-y-10";
   return (
     <div className={`p-8 rounded-lg  ${revealClass}`} id="skill">
-      <h2 className="text-2xl font-bold mb-4">Skills</h2>
+      <h2 className="text-2xl font-bold mb-4">Our Services</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6   ">
         {skillCategories.map(({ category, icons }, index) => (
