@@ -84,7 +84,7 @@ export default function About() {
           </h2>
           <p className="mt-6 text-lg leading-8 ">
             
-We provide a range of services including website and landing page development, logo design, banner creation, and more. Our goal is to deliver tailored solutions that meet the specific needs of each client and help them succeed in their online presence.
+I provide a range of services including website and landing page development, logo design, banner creation, and more. My goal is to deliver tailored solutions that meet the specific needs of each client and help them succeed in their online presence.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

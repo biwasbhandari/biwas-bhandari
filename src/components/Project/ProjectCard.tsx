@@ -175,7 +175,6 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
                 <span className="pt-5">
                   <strong>Technologies:</strong>
                   <span className="flex flex-col gap-1">
-                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     {project.techstack.map((tech: any, techIndex: any) => (
                       <span key={techIndex} className="flex gap-2 items-center">
                         <ArrowRight height={15} />
