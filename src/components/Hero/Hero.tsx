@@ -1,5 +1,5 @@
 import { ArrowDown, Youtube } from "lucide-react";
-import profile from "../../assets/profile.jpg";
+import profile from "../../assets/profile.png";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ import { animateScroll as scroll } from "react-scroll";
 
 const Hero: React.FC = () => {
   const scrollToContact = () => {
-    const contactElement = document.getElementById("contact");
+    const contactElement = document.getElementById("skill");
     if (contactElement) {
       scroll.scrollTo(contactElement.offsetTop, {
         duration: 800,
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          SPARK NEPAL
+        Biwas Bhandari
         </motion.h1>
            <motion.p
           className="my-4 text-secondary-foreground md:text-3xl text-xl text-center"
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          We help local businesses by providing them tailored support and micro services.
+          I help local businesses by providing them tailored support and micro services.
         </motion.p>
         <motion.div
           className="flex flex-wrap gap-2 mt-5 justify-center "
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <Button onClick={scrollToContact} className="flex items-center">Our Services <ArrowDown height={15}/> </Button>
+          <Button onClick={scrollToContact} className="flex items-center">My Services <ArrowDown height={15}/> </Button>
           <Link to="https://youtube.com/@s-biwas" target="_blank">
             <Button variant="secondary" className="flex items-center gap-2">
               Youtube <Youtube />
