@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
   
   return (
     <motion.section
-      className="flex flex-col-reverse items-center md:justify-around justify-center md:flex-row p-3 min-h-[95vh]"
+      className="flex flex-col-reverse items-center md:justify-around justify-center md:flex-row p-3 min-h-[90vh] "
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -31,10 +31,10 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-        Biwas Bhandari
+        Frontend Developer..
         </motion.h1>
            <motion.p
-          className="my-4 text-secondary-foreground md:text-3xl text-xl text-center"
+          className="my-4 text-secondary-foreground md:text-3xl text-xl text-center font-mono"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}
       >
-        <img src={profile} alt="biwas" className="h-[80vh] md:h-auto md:max-h-[60vh] lg:max-h-[70vh] border-l xl:max-h-[80vh]" loading="lazy" />
+        <img src={profile} alt="biwas" className="md:h-auto  md:max-h-[60vh] lg:max-h-[70vh] border-l xl:max-h-[80vh]" loading="lazy"  />
       </motion.div>
     </motion.section>
   );

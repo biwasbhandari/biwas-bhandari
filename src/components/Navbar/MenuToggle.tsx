@@ -19,7 +19,7 @@ const MenuToggle: React.FC = () => {
   return (
     <div className="flex items-center gap-2">
    
-      <Button onClick={scrollToContact}>Contact Us</Button>
+      <Button onClick={scrollToContact}>Contact Me</Button>
       <Mobnav />
     </div>
   );

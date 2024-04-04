@@ -17,15 +17,15 @@ const lists: NavItem[] = [
     to: "home",
   },
   {
-    title: "About us",
+    title: "About Me",
     to: "about",
   },
   {
-    title: "Our Services",
+    title: "Services",
     to: "skill",
   },
   {
-    title: "Our Projects",
+    title: "Projects",
     to: "project",
   },
 ];
