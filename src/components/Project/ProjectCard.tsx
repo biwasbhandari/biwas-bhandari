@@ -21,8 +21,9 @@ import { Button } from "../ui/button";
 import project1 from "../../assets/projects/p1.png";
 import project2 from "../../assets/projects/p2.png";
 import project3 from "../../assets/projects/p3.png";
-// import project4 from "../../assets/projects/p4.png";
 import project5 from "../../assets/projects/p5.png";
+import project10 from "../../assets/projects/p10.png"
+// import project4 from "../../assets/projects/p4.png";
 // import project6 from "../../assets/projects/p6.png";
 // import project7 from "../../assets/projects/p7.png";
 // import project8 from "../../assets/projects/p8.png";
@@ -32,6 +33,17 @@ import Animation from "../animation";
 import { ArrowRight } from "lucide-react";
 
 const projects = [
+  {
+    title: "Jholpattey Resturant",
+
+    demoLink: "https://www.jholpattey.com.np/",
+    alertDescription:
+      "A resturant landing page with best ui/ux design practice.",
+    techstack: [
+      "React",
+    ],
+    src: project10,
+  },
   {
     title: "Unparalleld",
 

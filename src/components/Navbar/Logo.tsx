@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.png";
+import logo from '../../assets/logo.png'
 import { Button } from "../ui/button";
 
 import { animateScroll as scroll } from "react-scroll";
