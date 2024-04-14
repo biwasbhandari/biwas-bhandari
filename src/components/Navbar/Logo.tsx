@@ -17,7 +17,7 @@ const Logo = () => {
     <div className="flex items-center">
       <div className="flex items-center">
         <Button onClick={scrollToContact} variant="link">
-          <img src={logo} alt="Biwas" height={50} width={100} />
+          <img src={logo} alt="Biwas" height={50} width={80} />
         </Button>
       </div>
     </div>
