@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
 
   return (
     <motion.section
-      className="flex flex-col-reverse items-center md:justify-around justify-center md:flex-row p-3 min-h-[90vh] "
+      className="flex flex-col-reverse items-center md:justify-around justify-center md:flex-row p-3 min-h-[85vh] "
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
