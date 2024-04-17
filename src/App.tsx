@@ -13,13 +13,13 @@ import ReviewCard from "./components/review/ReviewCard";
 function App() {
   return (
     <>
-      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme" >
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
         <Router>
           <Navbar />
           <Hero />
           <About />
-          <Skill />
           <Project />
+          <Skill />
           <Contact />
           <ReviewCard />
           <Footer />

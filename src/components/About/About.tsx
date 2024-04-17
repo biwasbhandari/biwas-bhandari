@@ -83,8 +83,13 @@ export default function About() {
             About Me
           </h2>
           <p className="mt-6 text-lg leading-8 ">
-            
-I provide a range of services including website and landing page development, logo design, banner creation, and more. My goal is to deliver tailored solutions that meet the specific needs of each client and help them succeed in their online presence.
+            Over the last two years, I've become quite adept at using React,
+            TypeScript, and MongoDB for software development. I've been honing
+            these skills to create robust solutions that meet project
+            requirements effectively. Currently, I'm diving into Python to
+            explore Generative AI further. This move is part of my ongoing
+            commitment to staying updated with the latest technologies and
+            facing new challenges head-on.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

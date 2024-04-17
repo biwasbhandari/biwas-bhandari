@@ -12,7 +12,7 @@ const Footer = () => {
             >
               Biwas
             </a>
-            {currentDate.slice(4, 8)}. All Rights Reserved.
+            {currentDate.slice(5, 9)} All Rights Reserved.
           </span>
         </div>
       </div>

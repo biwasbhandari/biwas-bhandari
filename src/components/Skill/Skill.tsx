@@ -1,35 +1,32 @@
-
 import { Button } from "../ui/button";
 
 import { useEffect, useState } from "react";
 
-import {  ArrowRightFromLine,  } from "lucide-react";
+import { Check } from "lucide-react";
 
 const skillCategories = [
   {
-    category: "Web design",
+    category: "Frontend",
     icons: [
-      { Icon: ArrowRightFromLine, name: "Landing Page" },
-      { Icon: ArrowRightFromLine, name: "Ecommerce Website" },
-      { Icon: ArrowRightFromLine, name: "Portfolio Website" },
-  
+      { Icon: Check, name: "HTML" },
+      { Icon: Check, name: "CSS" },
+      { Icon: Check, name: "Javascript" },
+      { Icon: Check, name: "Typescript" },
     ],
   },
   {
-    category: "Graphics Design",
+    category: "Frameworks | Libraries",
     icons: [
-      { Icon: ArrowRightFromLine, name: "Banner Design" },
-      { Icon: ArrowRightFromLine, name: "Logo Design" },
-      { Icon: ArrowRightFromLine, name: "Menu Design" },
+      { Icon: Check, name: "React" },
+      { Icon: Check, name: "Next.js" },
+      { Icon: Check, name: "Tailwind CSS" },
     ],
   },
   {
-    category: "Other",
+    category: "Database",
     icons: [
-      { Icon: ArrowRightFromLine, name: "Flex Print" },
-      { Icon: ArrowRightFromLine, name: "Color Print" },
-      { Icon: ArrowRightFromLine, name: "Social Media Handling" },
-      { Icon: ArrowRightFromLine, name: "Video editing" },
+      { Icon: Check, name: "MongoDB" },
+      { Icon: Check, name: "MySQL" },
     ],
   },
 ];
@@ -60,7 +57,7 @@ const Skill = () => {
     : "opacity-0 translate-y-10";
   return (
     <div className={`p-8 rounded-lg  ${revealClass}`} id="skill">
-      <h2 className="text-2xl font-bold mb-4">My Services</h2>
+      <h2 className="text-2xl font-bold mb-4">My Skills</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6   ">
         {skillCategories.map(({ category, icons }, index) => (
@@ -75,9 +72,7 @@ const Skill = () => {
                 className="flex items-center gap-3 md:mb-7 mb-4"
               >
                 <Icon className="text-3xl" />
-                <Button variant="outline" size="sm">
-                  {name}
-                </Button>
+                <Button variant="link">{name}</Button>
               </div>
             ))}
           </div>

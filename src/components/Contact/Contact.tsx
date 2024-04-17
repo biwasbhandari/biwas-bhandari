@@ -8,7 +8,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Label } from "../ui/label";
 import { ToastAction } from "../ui/toast";
-import { BsWhatsapp } from "react-icons/bs";
+// import { BsWhatsapp } from "react-icons/bs";
 
 const Contact: React.FC = () => {
   const { toast } = useToast();
@@ -155,12 +155,10 @@ const Contact: React.FC = () => {
             {isSubmitting ? "Submitting.." : "Submit"}
           </Button>
         </div>
-        <span className="">Or</span>
+        {/* <span className="">Or</span>
         
-        <Button className="flex justify-center items-center"><span >Whatsapp</span><BsWhatsapp className="ml-3 mr-3"/>9861237042 / 9862904140</Button>
-   
+        <Button className="flex justify-center items-center"><span >Whatsapp</span><BsWhatsapp className="ml-3 mr-3"/>9861237042 / 9862904140</Button> */}
       </form>
-      
     </div>
   );
 };
