@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
           Frontend Developer..
         </motion.h1>
         <motion.p
-          className="my-4 text-secondary-foreground md:text-3xl text-xl text-center"
+          className="my-4  md:text-2xl text-xl text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
