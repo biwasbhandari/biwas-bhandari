@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.png'
+// import logo from "../../assets/logo.png";
 import { Button } from "../ui/button";
 
 import { animateScroll as scroll } from "react-scroll";
@@ -17,7 +17,8 @@ const Logo = () => {
     <div className="flex items-center">
       <div className="flex items-center">
         <Button onClick={scrollToContact} variant="link">
-          <img src={logo} alt="Biwas" height={50} width={80} />
+          {/* <img src={logo} alt="Biwas" height={50} width={50} /> */}
+          <p className="text-3xl font-bold">BiwasDev</p>
         </Button>
       </div>
     </div>
