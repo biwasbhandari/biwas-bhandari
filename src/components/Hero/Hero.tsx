@@ -1,5 +1,5 @@
 import { ArrowDown, Youtube } from "lucide-react";
-import profile from "../../assets/profile.jpg";
+import profile from "../../assets/me.png";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
